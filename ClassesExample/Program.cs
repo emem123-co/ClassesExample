@@ -10,19 +10,10 @@ internal class Program
         var newSecretNumber = tql.RandomizeSecretNumber(321);
         Console.WriteLine($"The new secret number is {newSecretNumber}.");
         tql.DisplayClassname();
-      
-
     }
 }
+//best practice to put the = additional class in another file, not the same code page (see TQL.cs file).
+//to add this additional class file, right click project file in solution explorer, add, class. Name it the same name as the class in the code. 
 
-internal class TQL {
-    public int SecretNumber {get;set;}
-    public void DisplayClassname() {
-        Console.WriteLine($"Classname is TQL; Secret Number is {SecretNumber}.");
-        }
 
-    public int RandomizeSecretNumber(int RandomNumber) {
-        SecretNumber *= RandomNumber;
-        return SecretNumber;
-    }
-}
+   
